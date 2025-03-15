@@ -1,0 +1,13 @@
+<p>template-binding works!</p>
+{{name}} {{age}}
+
+<h2>property binding</h2>
+<!--element [property]='value'-->
+<button [disabled]="isDisabled">Registrar</button>
+
+<h2>attribute binding</h2>
+<!--<element [attr.attribute-you-are-targeting]="value"></element>-->
+<p [attr.aria-label]="name">teste attribute</p>
+
+<h2>Class and style binding</h2>
+<p [class.background-red]="true">{{name}}</p>
