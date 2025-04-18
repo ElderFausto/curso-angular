@@ -11,3 +11,15 @@
 
 <h2>Class and style binding</h2>
 <p [class.background-red]="true">{{name}}</p>
+
+<p [class.background-red]="age > 32" [class.background-blue]="age < 32">Pascoa</p>
+
+<h1>{{ name }}</h1>
+
+<input (keydown.shift.t)="onKeyDown($event)">
+
+<div style="background: red; width: 30px; height:30px; margin-top: 10px" (mousemove)="onMouseMove($event)">
+
+</div>
+
+<input [(ngModel)]="name">

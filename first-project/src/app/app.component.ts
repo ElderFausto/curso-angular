@@ -6,7 +6,7 @@ import { TemplateBindingComponent } from './componentes/template-binding/templat
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NewComponent, TemplateBindingComponent],
+  imports: [NewComponent, TemplateBindingComponent],
   template:  `<!-- <router-outlet />-->
   <h1>Curso angular</h1>
   <app-template-binding/>
