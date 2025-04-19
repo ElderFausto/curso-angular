@@ -1,25 +1,4 @@
-<p>template-binding works!</p>
-{{name}} {{age}}
-
-<h2>property binding</h2>
-<!--element [property]='value'-->
-<button [disabled]="isDisabled">Registrar</button>
-
-<h2>attribute binding</h2>
-<!--<element [attr.attribute-you-are-targeting]="value"></element>-->
-<p [attr.aria-label]="name">teste attribute</p>
-
-<h2>Class and style binding</h2>
-<p [class.background-red]="true">{{name}}</p>
-
-<p [class.background-red]="age > 32" [class.background-blue]="age < 32">Pascoa</p>
-
-<h1>{{ name }}</h1>
-
-<input (keydown.shift.t)="onKeyDown($event)">
-
-<div style="background: red; width: 30px; height:30px; margin-top: 10px" (mousemove)="onMouseMove($event)">
-
-</div>
-
 <input [(ngModel)]="name">
+{{name}}
+
+<div [ngClass]="{ 'background-red': true}">classes condicionais</div>

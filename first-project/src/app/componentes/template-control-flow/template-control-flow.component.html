@@ -1,0 +1,20 @@
+<h2>template-control-flow</h2>
+
+<h3>IF</h3>
+
+<!--nova forma-->
+
+@if (isTrue) {
+  Sim 1 é ===1
+} @else {
+  Não
+}
+
+<!--forma antiga-->>
+
+<ng-container *ngIf="isTrue; else isFalse">
+  <p>elder</p>
+  <p>Jesus</p>
+</ng-container>
+
+<ng-template #isFalse>Nao esta correto</ng-template>
